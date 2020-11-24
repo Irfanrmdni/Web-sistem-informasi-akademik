@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Link CSS lokal -->
+    <link rel="stylesheet" href="css/admin.css">
+    <!-- Link Font Awesome lokal -->
+    <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+    <title>Sistem informasi akademik</title>
+</head>
+
+<body>
+    <!-- Membuat Navbar top  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <!-- Membuat container -->
+        <a class="navbar-brand" href="#">Selamat Datang Admin <b>Universitas Majapahit</b></a>
+        <!-- Membuat Search dan button -->
+        <form class="form-inline ml-auto my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- Membuat icon -->
+        <div class="icon">
+            <h5 class="my-2 my-sm-0">
+                <a href="#" data-toggle="tooltip" title="Pesan" data-placement="bottom"><i
+                        class="fas fa-envelope text-white ml-4 mr-3"></i></a>
+                <a href="#" data-toggle="tooltip" title="Notifikasi" data-placement="bottom"> <i
+                        class="fas fa-bell text-white mr-3"></i></a>
+                <a href="#" data-toggle="tooltip" title="Keluar" data-placement="bottom"><i
+                        class="fas fa-sign-out-alt text-white mr-3"></i></a>
+            </h5>
+        </div>
+    </nav>
+
+    <!-- Membuat grid sistem 2 kolom dengan no-gutters atau tanpa jarak jadi mepet kolomnya -->
+    <div class="row no-gutters mt-5 navigasi">
+        <!-- Membuat kolom ke 1 dengan ukuran 2 kolom/bagian -->
+        <div class="col-md-2 bg-dark">
+            <!-- Membuat navs vertical dengan menggunakan flexbox -->
+            <ul class="nav flex-column mt-5 mb-4 mx-2">
+                <li class="nav-item dua mb-2">
+                    <a class="nav-link" href="dashboard.html"><i
+                            class="fas fa-tachometer-alt mr-2 text-white"></i>Dashboard</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="mahasiswa.html"><i class="fas fa-user-graduate mr-2 text-white"></i>Daftar
+                        Mahasiswa</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="fakultas.html"><i class="fas fa-cog mr-2 text-white"></i>Daftar
+                        Fakultas</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="program-studi.html"><i class="fas fa-user-cog mr-2 text-white"></i>Daftar
+                        Program Studi</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="dosen.html"><i
+                            class="fas fa-chalkboard-teacher mr-2 text-white"></i>Daftar
+                        Dosen</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="staff.html"><i class="fas fa-user-edit mr-2 text-white"></i>Daftar
+                        Staff</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="pegawai.html"><i class="fas fa-user-tag mr-2 text-white"></i>Daftar
+                        Pegawai</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="jadwal-kuliah.html"><i
+                            class="fas fa-calendar-check mr-2 text-white"></i>Jadwal Kuliah</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="mata-kuliah.html"><i class="fas fa-book-open mr-2 text-white"></i>Mata
+                        Kuliah</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Membuat kolom ke 2 dengan ukuran 10 kolom/bagian -->
+        <div class="col-md-10 p-5">
+            <!-- membuat icon dashboard -->
+            <h2 class="mb-4 ml-5 dashboard">
+                <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
+            </h2>
+            <!-- membuat grid sistem lagi dengan row saja -->
+            <div class="row text-white ml-5">
+                <!-- Membuat card untuk mahasiswa -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <!-- Membuat icon mahasiswa -->
+                        <i class="fa-4x fas fa-user-graduate text-white mb-2"></i>
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h5 class="card-title">Jumlah Mahasiswa</h5>
+                        <div class="display-4 font-weight-bold">2.963</div>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Fakultas -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <!-- Membuat icon mahasiswa -->
+                        <i class="fa-4x fas fa-cog mb-2 text-white"></i>
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h5 class="card-title">Jumlah Fakultas</h5>
+                        <div class="display-4 font-weight-bold">13</div>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi -->
+                <div class="card bg-info mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <!-- Membuat icon mahasiswa -->
+                        <i class="fa-4x fas fa-chalkboard-teacher mb-2 text-white"></i>
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h5 class="card-title">Jumlah Program Studi</h5>
+                        <div class="display-4 font-weight-bold">37</div>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk dosen-->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <!-- Membuat icon mahasiswa -->
+                        <i class="fa-4x fas fa-user-cog mb-2 text-white"></i>
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h5 class="card-title">Jumlah Dosen</h5>
+                        <div class="display-4 font-weight-bold">79</div>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk staff -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <!-- Membuat icon mahasiswa -->
+                        <i class="fa-4x fas fa-user-edit mb-2 text-white"></i>
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h5 class="card-title">Jumlah Staff</h5>
+                        <div class="display-4 font-weight-bold">22</div>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk pegawai -->
+                <div class="card bg-info mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <!-- Membuat icon mahasiswa -->
+                        <i class="fa-4x fas fa-user-tag mb-2 text-white"></i>
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h5 class="card-title">Jumlah Pegawai</h5>
+                        <div class="display-4 font-weight-bold">45</div>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Membuat sosial media menggunakan grid sistem row-->
+            <h2 class="ml-5 my-4">Sosial Media</h2>
+            <div class="row mt-3 ml-5">
+                <div class="card mr-3" style="width: 18rem;">
+                    <div class="card-header display-4 bg-dark text-white text-center">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Instagram</h5>
+                        <p class="card-text">Follow instagram kami untuk melihat kegiatan di universitas majapahit</p>
+                        <a href="#" class="btn btn-primary bg-primary">Go Follow</a>
+                    </div>
+                </div>
+
+                <div class="card mr-3" style="width: 18rem;">
+                    <div class="card-header display-4 bg-dark text-white text-center">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Facebook</h5>
+                        <p class="card-text">Follow facebook kami untuk melihat kegiatan di universitas majapahit</p>
+                        <a href="#" class="btn btn-primary bg-primary">Go Follow</a>
+                    </div>
+                </div>
+
+                <div class="card mr-3" style="width: 18rem;">
+                    <div class="card-header display-4 bg-dark text-white text-center">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Twitter</h5>
+                        <p class="card-text">Follow twitter kami untuk melihat lebih lanjut kegiatan di universitas
+                            majapahit</p>
+                        <a href="#" class="btn btn-primary bg-primary">Go Follow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Membuat Footer -->
+    <footer class="footer bg-primary px-5 py-5 text-white mt-4">
+        <div class="row text-left ml-5">
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <h5 class="mb-4">Layanan</h5>
+                    </li>
+                    <li class="mb-2"><a href="#">Bantuan & Saran</a></li>
+                    <li class="mb-2"><a href="#">Hubungi Kami</a></li>
+                    <li class="mb-2"><a href="#">Beasiswa</a></li>
+                    <li class="mb-2"><a href="#">Bantuan</a></li>
+                    <li class="mb-2"><a href="#">Bantuan</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <h5 class="mb-4">Pendaftaran</h5>
+                    </li>
+                    <li class="mb-2"><a href="#">Bantuan & Saran</a></li>
+                    <li class="mb-2"><a href="#">Hubungi Kami</a></li>
+                    <li class="mb-2"><a href="#">Beasiswa</a></li>
+                    <li class="mb-2"><a href="#">Bantuan</a></li>
+                    <li class="mb-2"><a href="#">Bantuan</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <h5 class="mb-4">Akademik</h5>
+                    </li>
+                    <li class="mb-2"><a href="#">Bantuan & Saran</a></li>
+                    <li class="mb-2"><a href="#">Hubungi Kami</a></li>
+                    <li class="mb-2"><a href="#">Beasiswa</a></li>
+                    <li class="mb-2"><a href="#">Bantuan</a></li>
+                    <li class="mb-2"><a href="#">Bantuan</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <h5 class="mb-4">Informasi</h5>
+                    </li>
+                    <li class="mb-2"><a href="#">Bantuan & Saran</a></li>
+                    <li class="mb-2"><a href="#">Hubungi Kami</a></li>
+                    <li class="mb-2"><a href="#">Beasiswa</a></li>
+                    <li class="mb-2"><a href="#">Bantuan</a></li>
+                    <li class="mb-2"><a href="#">Bantuan</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright text-center pt-3 pb-2 bg-dark text-white">
+        <p>Copyright © 2018 - Developed by Universitas Sangga Buana. Powered by Direktorat Sisfo, Multimedia, dan Data
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- Link javascript lokal -->
+    <script type="text/javascript" src="js/admin.js"></script>
+</body>
+
+</html>

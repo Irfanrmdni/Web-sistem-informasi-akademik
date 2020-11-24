@@ -1,0 +1,56 @@
+.nav-item {
+    border-bottom: 1px rgb(39, 118, 236) solid;
+}
+div.card-body a:hover{
+    background-color: white;
+}
+.nav li:hover {
+    background-color: rgb(39, 118, 236);
+}
+.nav li a:hover {
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer h5 {
+    text-align: left;
+}
+
+footer {
+    border-top: 4px solid rgb(39, 38, 38);
+}
+
+.copyright p {
+    font-size: 13px;
+}
+
+@media (max-width:300px) {
+    a.navbar-brand {
+        font-size: 13px;
+    }
+    div.icon {
+        margin-left: 60px;
+    }
+    .nav li {
+        margin-top: 125px;
+    }
+    h2.dashboard {
+        font-size: 22px;
+        position: relative;
+        left: -60px;
+    }
+    .card {
+        margin-left: -60px;
+    }
+    footer li {
+        font-size: 10px;
+    }
+    footer h5 {
+        font-size: 14px;
+    }
+    
+}
+

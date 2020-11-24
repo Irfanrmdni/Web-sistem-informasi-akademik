@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Link CSS lokal -->
+    <link rel="stylesheet" href="css/admin.css">
+    <!-- Link Font Awesome lokal -->
+    <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+    <title>Sistem informasi akademik</title>
+</head>
+
+<body>
+    <!-- Membuat Navbar top  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <!-- Membuat container -->
+        <a class="navbar-brand" href="#">Selamat Datang Admin <b>Universitas Majapahit</b></a>
+        <!-- Membuat Search dan button -->
+        <form class="form-inline ml-auto my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- Membuat icon -->
+        <div class="icon">
+            <h5 class="my-2 my-sm-0">
+                <a href="#" data-toggle="tooltip" title="Pesan" data-placement="bottom"><i
+                        class="fas fa-envelope text-white ml-4 mr-3"></i></a>
+                <a href="#" data-toggle="tooltip" title="Notifikasi" data-placement="bottom"> <i
+                        class="fas fa-bell text-white mr-3"></i></a>
+                <a href="#" data-toggle="tooltip" title="Keluar" data-placement="bottom"><i
+                        class="fas fa-sign-out-alt text-white mr-3"></i></a>
+            </h5>
+        </div>
+    </nav>
+
+    <!-- Membuat grid sistem 2 kolom dengan no-gutters atau tanpa jarak jadi mepet kolomnya -->
+    <div class="row no-gutters mt-5">
+        <!-- Membuat kolom ke 1 dengan ukuran 2 kolom/bagian -->
+        <div class="col-md-2 bg-dark">
+            <!-- Membuat navs vertical dengan menggunakan flexbox -->
+            <ul class="nav flex-column mt-5 mb-4 mx-2">
+                <li class="nav-item dua mb-2">
+                    <a class="nav-link" href="dashboard.html"><i
+                            class="fas fa-tachometer-alt mr-2 text-white"></i>Dashboard</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="mahasiswa.html"><i class="fas fa-user-graduate mr-2 text-white"></i>Daftar
+                        Mahasiswa</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="fakultas.html"><i class="fas fa-cog mr-2 text-white"></i>Daftar
+                        Fakultas</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="program-studi.html"><i class="fas fa-user-cog mr-2 text-white"></i>Daftar
+                        Program Studi</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="dosen.html"><i
+                            class="fas fa-chalkboard-teacher mr-2 text-white"></i>Daftar
+                        Dosen</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="staff.html"><i class="fas fa-user-edit mr-2 text-white"></i>Daftar
+                        Staff</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="pegawai.html"><i class="fas fa-user-tag mr-2 text-white"></i>Daftar
+                        Pegawai</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="jadwal-kuliah.html"><i
+                            class="fas fa-calendar-check mr-2 text-white"></i>Jadwal Kuliah</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="mata-kuliah.html"><i class="fas fa-book-open mr-2 text-white"></i>Mata
+                        Kuliah</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Membuat kolom ke 2 dengan ukuran 10 kolom/bagian -->
+        <div class="col-md-10 p-5">
+            <!-- membuat icon dashboard -->
+            <h2 class="mb-4 ml-5">
+                <i class="fas fa-user-cog mr-2 text-dark"></i> Daftar Program Studi
+            </h2>
+            <!-- membuat judul untuk fakultas bahasa -->
+            <h4 class="mb-3 ml-5">Fakultas Bahasa Sastra</h4>
+            <!-- membuat grid sistem lagi dengan row saja -->
+            <div class="row text-white ml-5">
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Bahasa Sastra Jerman</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Bahasa Sastra Arab</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Bahasa Sastra Inggris</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Bahasa Sastra Korea</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Bahasa Sastra Russia</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Bahasa Sastra Mandarin</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- membuat judul untuk fakultas Ilmu Hukum -->
+            <h4 class="mb-3 ml-5 mt-3">Fakultas Seni Rupa</h4>
+            <!-- membuat grid sistem lagi dengan row saja -->
+            <div class="row text-white ml-5">
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Seni Rupa Terapan</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Seni rupa -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Seni Rupa Murni</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Seni rupa -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Seni Rupa Melukis</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Seni rupa -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Seni Rupa Abstrak</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Seni rupa -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Seni Desain Visual</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Seni rupa -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Seni Televisi Film</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- membuat judul untuk fakultas Ilmu Hukum -->
+            <h4 class="mb-3 ml-5 mt-3">Fakultas Ilmu Hukum</h4>
+            <!-- membuat grid sistem lagi dengan row saja -->
+            <div class="row text-white ml-5">
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Hukum Nasional</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Hukum -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Hukum International</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Hukum -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Hukum Pemerintah</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Hukum -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Hukum Politik</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Hukum -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Hukum Sosial</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Hukum -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Hukum Bea Cukai</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- membuat judul untuk fakultas Ilmu Ekonomi -->
+            <h4 class="mb-3 ml-5 mt-3">Fakultas Ilmu Ekonomi</h4>
+            <!-- membuat grid sistem lagi dengan row saja -->
+            <div class="row text-white ml-5">
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Ekonomi Konvensional</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Ekonomi -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Ekonomi International</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Ekonomi -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Ekonomi Pemerintah</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Ekonomi -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Ekonomi Politik</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Ekonomi -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Ekonomi Pasar</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Ilmu Ekonomi -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Ilmu Ekonomi Pajak</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- membuat judul untuk fakultas Kedokteran -->
+            <h4 class="mb-3 ml-5 mt-3">Fakultas Kedokteran</h4>
+            <!-- membuat grid sistem lagi dengan row saja -->
+            <div class="row text-white ml-5">
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Kedokteran Spesialis</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Kedokteran Umum</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Kedokteran Bedah</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Kedokteran Bayi</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Kedokteran Anak</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">S1 Kedokteran Hewan</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- membuat judul untuk Fakultas Matematika -->
+            <h4 class="mb-3 ml-5 mt-3">Fakultas Matematika</h4>
+            <!-- membuat grid sistem lagi dengan row saja -->
+            <div class="row text-white ml-5">
+                <!-- Membuat card untuk Program studi bahasa sastra -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">Si Matematika Matriks</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">Si Matematika Kalkulus</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">Si Matematika Aljabar</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-danger mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">Si Matematika Liniear</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-warning mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">Si Matematika Diskrit</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Membuat card untuk Program studi Kedokteran -->
+                <div class="card bg-success mr-3 mb-3" style="width: 18rem;">
+                    <div class="card-body text-center mt-2">
+                        <!-- Membuat angka jumlah mahasiswa dengan display-4 agar besar -->
+                        <h2 class="card-title font-weight-bold">Si Matematika Relasi</h2>
+                        <a href="#" class="card-link">
+                            <p class="card-text text-white">Lihat detail
+                                <i class=" fas fa-angle-double-right ml-1"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- Link javascript lokal -->
+    <script type="text/javascript" src="js/admin.js"></script>
+</body>
+
+</html>

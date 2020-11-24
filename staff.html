@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Link CSS lokal -->
+    <link rel="stylesheet" href="css/admin.css">
+    <!-- Link Font Awesome lokal -->
+    <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+    <title>Sistem informasi akademik</title>
+</head>
+
+<body>
+    <!-- Membuat Navbar top  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <!-- Membuat container -->
+        <a class="navbar-brand" href="#">Selamat Datang Admin <b>Universitas Majapahit</b></a>
+        <!-- Membuat Search dan button -->
+        <form class="form-inline ml-auto my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- Membuat icon -->
+        <div class="icon">
+            <h5 class="my-2 my-sm-0">
+                <a href="#" data-toggle="tooltip" title="Pesan" data-placement="bottom"><i
+                        class="fas fa-envelope text-white ml-4 mr-3"></i></a>
+                <a href="#" data-toggle="tooltip" title="Notifikasi" data-placement="bottom"> <i
+                        class="fas fa-bell text-white mr-3"></i></a>
+                <a href="#" data-toggle="tooltip" title="Keluar" data-placement="bottom"><i
+                        class="fas fa-sign-out-alt text-white mr-3"></i></a>
+            </h5>
+        </div>
+    </nav>
+
+    <!-- Membuat grid sistem 2 kolom dengan no-gutters atau tanpa jarak jadi mepet kolomnya -->
+    <div class="row no-gutters mt-5">
+        <!-- Membuat kolom ke 1 dengan ukuran 2 kolom/bagian -->
+        <div class="col-md-2 bg-dark">
+            <!-- Membuat navs vertical dengan menggunakan flexbox -->
+            <ul class="nav flex-column mt-5 mb-4 mx-2">
+                <li class="nav-item dua mb-2">
+                    <a class="nav-link" href="dashboard.html"><i
+                            class="fas fa-tachometer-alt mr-2 text-white"></i>Dashboard</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="mahasiswa.html"><i class="fas fa-user-graduate mr-2 text-white"></i>Daftar
+                        Mahasiswa</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="fakultas.html"><i class="fas fa-cog mr-2 text-white"></i>Daftar
+                        Fakultas</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="program-studi.html"><i class="fas fa-user-cog mr-2 text-white"></i>Daftar
+                        Program Studi</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="dosen.html"><i
+                            class="fas fa-chalkboard-teacher mr-2 text-white"></i>Daftar
+                        Dosen</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="staff.html"><i class="fas fa-user-edit mr-2 text-white"></i>Daftar
+                        Staff</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="pegawai.html"><i class="fas fa-user-tag mr-2 text-white"></i>Daftar
+                        Pegawai</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="jadwal-kuliah.html"><i
+                            class="fas fa-calendar-check mr-2 text-white"></i>Jadwal Kuliah</a>
+                </li>
+                <li class="nav-item mt-1 mb-3">
+                    <a class="nav-link" href="mata-kuliah.html"><i class="fas fa-book-open mr-2 text-white"></i>Mata
+                        Kuliah</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Membuat kolom ke 2 dengan ukuran 10 kolom/bagian -->
+        <div class="col-md-10 p-5">
+            <!-- membuat icon dashboard -->
+            <h2 class="mb-4">
+                <i class="fas fa-user-edit mr-2 text-dark"></i> Daftar Staff
+            </h2>
+
+            <!-- Membuat tambah data Staff button -->
+            <a href="#" class="btn btn-primary mb-3"> <i class="fas fa-plus-square mr-2"></i> Tambah data Staff</a>
+
+            <!-- Membuat table daftar Staff -->
+            <table class="table table-bordered table-responsive-md table-hover table-light">
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col">NO</th>
+                        <th scope="col">Nama Staff</th>
+                        <th scope="col">NIM</th>
+                        <th scope="col">Tempat Tgl Lahir</th>
+                        <th scope="col">Alamat</th>
+                        <th scope="col" colspan="3">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope=" row">1</th>
+                        <td>Asep S,T</td>
+                        <td>2113191069</td>
+                        <td>Bandung 09 agustus 2000</td>
+                        <td>Sarijadi</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope=" row">2</th>
+                        <td>Jajang S.Ked</td>
+                        <td>2113191069</td>
+                        <td>Garut 12 Juli 2002</td>
+                        <td>Sarijadi</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope=" row">3</th>
+                        <td>Gunawan S.Pt</td>
+                        <td>2981290021</td>
+                        <td>Bandung 21 Januari 1995</td>
+                        <td>Cibarengkok</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope=" row">4</th>
+                        <td>Muhammad S.Kom</td>
+                        <td>2221109745</td>
+                        <td>Sumatra 01 Mei 1992</td>
+                        <td>Padang</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope=" row">5</th>
+                        <td>Varel S.E.</td>
+                        <td>2198745001</td>
+                        <td>Klaten 30 Juli 2005</td>
+                        <td>Pacitan</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope=" row">6</th>
+                        <td>Akbar S.I.Kom</td>
+                        <td>2113191069</td>
+                        <td>Jakarta 22 agustus 2009</td>
+                        <td>Sukasari</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope=" row">7</th>
+                        <td>Rossa S.T</td>
+                        <td>2187659921</td>
+                        <td>Tasik 10 agustus 2000</td>
+                        <td>Sarijadi</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope=" row">8</th>
+                        <td>Rizal S.Si</td>
+                        <td>2119876755</td>
+                        <td>Surabaya 16 November 1991</td>
+                        <td>Segarmanah</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope=" row">9</th>
+                        <td>Melinda S.Farm</td>
+                        <td>2198776401</td>
+                        <td>Bali 27 Desember 1990</td>
+                        <td>Dewata</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope=" row">10</th>
+                        <td>Ayu S.Farm</td>
+                        <td>2199822001</td>
+                        <td>Papua 20 Oktober 2000</td>
+                        <td>Cijambe</td>
+                        <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        <td>
+                            <a href="#"> <i class="fas fa-edit bg-success text-white p-2"></i></a>
+                        </td>
+                        <td>
+                            <a href="#"> <i class="fas fa-trash-alt bg-danger text-white p-2"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- Link javascript lokal -->
+    <script type="text/javascript" src="js/admin.js"></script>
+</body>
+
+</html>
